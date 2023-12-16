@@ -26,7 +26,7 @@ const handleRequest = (req, res) => {
             console.log(parsedBody)
         })
         res.statusCode = 302
-        res.setHeader('Location', '/')
+        // res.setHeader('Location', '/')
         return res.end()
     }
 

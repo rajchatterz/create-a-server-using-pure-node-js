@@ -1,5 +1,5 @@
 const http = require('http')
-
-const ReadyServer = http.createServer()
+const fetchData = require('./server')
+const ReadyServer = http.createServer(fetchData)
 
 ReadyServer.listen(3000)
